@@ -2,5 +2,16 @@
 <hr>
 
 <form action="" method="post">
-    <input type="submit">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Get repositories">
 </form>
+
+<div>
+    <h3>{{name}}</h3>
+    {% for item in response%}
+            <ol>{{item}}</ol>
+
+    {% endfor %}
+
+</div>
