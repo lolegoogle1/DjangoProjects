@@ -1,5 +1,4 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.shortcuts import render
 
 from .github_response import *
 from .forms import CustomerForm
@@ -15,7 +14,3 @@ def index(request):
     name, response = get_repositories(form.login)
     context = {'form': form, 'response': response, "name": name}
     return render(request, 'gitgraphql/index.html', context)
-
-
-
-

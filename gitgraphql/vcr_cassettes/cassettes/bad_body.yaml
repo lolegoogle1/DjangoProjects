@@ -1,0 +1,80 @@
+interactions:
+- request:
+    body: '"{''query'': ''{user(login: ){name repositories(first: 100){edges{node{name}}}}
+      }'' % real_users[0]}"'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: '{"message":"Body should be a JSON object","documentation_url":"https://docs.github.com/graphql"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Content-Length:
+      - '96'
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 27 Sep 2021 17:21:11 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Accepted-OAuth-Scopes:
+      - repo
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - 484C:1256C:1DD1463:1E5F307:6151FD87
+      X-OAuth-Scopes:
+      - admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key,
+        admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo,
+        user, workflow, write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4982'
+      X-RateLimit-Reset:
+      - '1632766807'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '18'
+      X-XSS-Protection:
+      - '0'
+      github-authentication-token-expiration:
+      - 2021-10-26 14:41:45 UTC
+    status:
+      code: 400
+      message: Bad Request
+version: 1

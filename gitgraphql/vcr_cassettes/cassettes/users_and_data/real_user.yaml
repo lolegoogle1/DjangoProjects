@@ -1,0 +1,419 @@
+interactions:
+- request:
+    body: '{"query": "{user(login: \"crankerkor\"){name repositories(first: 100){edges{node{name}}}}
+      }"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '93'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22OMQrDMAxFr1I0x4GuOUOg3UsHJRaJasc2kkMLIXevvXSptUgfvQf/AIsZYThg
+        V5K6A24EA9w8OcVg5TLuWSm4CB0IpaicozBpZcku9XgUK9pi/ewaX2rog1vyBTnP7o+ZBYMjcVH6
+        hfO6Tz3HJujZmyycms97fJPoiolGnK5NxLLOQpnMVlp543FqF7JY9OdZ5gt6hi/hFgEAAA==
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 27 Sep 2021 17:24:48 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Accepted-OAuth-Scopes:
+      - repo
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CF2B:3183:3516BBE:375E44D:6151FE60
+      X-OAuth-Scopes:
+      - admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key,
+        admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo,
+        user, workflow, write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4959'
+      X-RateLimit-Reset:
+      - '1632766807'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '41'
+      X-XSS-Protection:
+      - '0'
+      github-authentication-token-expiration:
+      - 2021-10-26 14:41:45 UTC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query": "{user(login: \"lolegoogle1\"){name repositories(first: 100){edges{node{name}}}}
+      }"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA2WLKw6AMBBEr0JWY7BoBA48QTR0Uj6FJbtFENK70xoMY2aSee8ha4Kh+qFLIbkP
+        s4Nq6jzmopVb5+naqCTByboElgWaMViXx5AEtkn4RM8ejtl5VBRj+fub1RyOe+EVU9CEjDHlBe2J
+        B9mIAAAA
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 27 Sep 2021 17:24:49 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Accepted-OAuth-Scopes:
+      - repo
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - B7D3:7168:1B48B0A:1BD1080:6151FE60
+      X-OAuth-Scopes:
+      - admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key,
+        admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo,
+        user, workflow, write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4958'
+      X-RateLimit-Reset:
+      - '1632766807'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '42'
+      X-XSS-Protection:
+      - '0'
+      github-authentication-token-expiration:
+      - 2021-10-26 14:41:45 UTC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query": "{user(login: \"LunaLovegoood\"){name repositories(first: 100){edges{node{name}}}}
+      }"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '96'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22RsW4DIQyG34U5HrrmDSplyF518B0+YsXYyHC6JtG9ezhV6lJYQPo+foufV4jY
+        MJxfYa3kx66YKZzDxUwf4RScilVu5kz1wBTTcfjqosUu/l3I2Jx/wr6f/iFHjZZhQ7n3GSNDUFMz
+        rYDahsKErlXoAQu5Do3rJ2TTRjCjiw0VhbI+n0JDeLWNvN6w0AWnj6FSORchSL0hIE2s46TmuCw8
+        wyK2DXN+q4LIiRsKOPL4SQUdRUhgtlzWxpqGcXi7Q52dS6tDHrlT6s3k/mNSQXA6xO+9rzeOFdZ1
+        AAIAAA==
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 27 Sep 2021 17:24:49 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Accepted-OAuth-Scopes:
+      - repo
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - CDB5:01ED:1AE9D10:1B73D73:6151FE61
+      X-OAuth-Scopes:
+      - admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key,
+        admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo,
+        user, workflow, write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4957'
+      X-RateLimit-Reset:
+      - '1632766807'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '43'
+      X-XSS-Protection:
+      - '0'
+      github-authentication-token-expiration:
+      - 2021-10-26 14:41:45 UTC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query": "{user(login: \"Yurii-Khomiak\"){name repositories(first: 100){edges{node{name}}}}
+      }"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '96'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22NQQ7CMAwEv4J8bj7QL/AChDhY2C0WSVwlDqiq8necCxfwZVeaHfkAQkOYD2iV
+        y8iMiWGGSysip/NDk+ATJii8aRXTIlzHjGkd5eqCkgtfkdQWic56n37gbgEbiYYt4h6lWiB956hI
+        /vyfkF+Swl3zIqvzW/f7AOuRx4WzAAAA
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 27 Sep 2021 17:24:49 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Accepted-OAuth-Scopes:
+      - repo
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - 0789:0749:1B24791:1BAE7B5:6151FE61
+      X-OAuth-Scopes:
+      - admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key,
+        admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo,
+        user, workflow, write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4956'
+      X-RateLimit-Reset:
+      - '1632766807'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '44'
+      X-XSS-Protection:
+      - '0'
+      github-authentication-token-expiration:
+      - 2021-10-26 14:41:45 UTC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"query": "{user(login: \"dhmfu\"){name repositories(first: 100){edges{node{name}}}}
+      }"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer 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
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.26.0
+    method: POST
+    uri: https://api.github.com/graphql
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4XOMQ7DIAwF0KtUnsMFMvcMXaIOrrESBAkIQ5fId49ZumToX/yHZ+mf4LEhzCd0
+        4TrugTvDDC+UkB7P7iPCBJVLltByDSwDsV9HWYxnb/z31veIjrB+8kGYCFSnm6GNKaYgzWEp/4Wz
+        YV/bpvpWywWaXoRJsgAAAA==
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 27 Sep 2021 17:24:50 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Accepted-OAuth-Scopes:
+      - repo
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v4; format=json
+      X-GitHub-Request-Id:
+      - 8ACA:9790:109F32F:1115B3D:6151FE61
+      X-OAuth-Scopes:
+      - admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key,
+        admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo,
+        user, workflow, write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4955'
+      X-RateLimit-Reset:
+      - '1632766807'
+      X-RateLimit-Resource:
+      - graphql
+      X-RateLimit-Used:
+      - '45'
+      X-XSS-Protection:
+      - '0'
+      github-authentication-token-expiration:
+      - 2021-10-26 14:41:45 UTC
+    status:
+      code: 200
+      message: OK
+version: 1
