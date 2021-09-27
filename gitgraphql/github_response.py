@@ -1,16 +1,17 @@
 import requests
 
+URL = 'https://api.github.com/graphql'
+API_TOKEN = "###########"
+
 
 def get_repositories(login):
-    url = 'https://api.github.com/graphql'
     json = {'query': '{user(login: "%s"){name repositories(first: 100){edges{node{name}}}} }' % login}
-    api_token = "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"
-    headers = {'Authorization': 'Bearer %s' % api_token}
+    headers = {'Authorization': 'Bearer %s' % API_TOKEN}
     try:
-        response = requests.post(url=url, json=json, headers=headers)
+        response = requests.post(url=URL, json=json, headers=headers)
         return extract_data(response)
     except TypeError:
-        return 'There is no such user, there are only: ', "TypeError Exception"
+        return 'There is no such user', ""
     except requests.exceptions.ConnectionError:
         return "I'm sorry. The connection can't be established at the moment", ""
 

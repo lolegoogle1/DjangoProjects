@@ -1,18 +1,18 @@
 interactions:
 - request:
-    body: '{"query": "{user(login: \"lolegoogle1\"){name repositories(first: 100){edges{node{name}}}}
-      }"}'
+    body: '"{''query'': ''{user(login: \"lolegoogle1\"){name repositories(first: 100){edges{node{name}}}}
+      }''}"'
     headers:
       Accept:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer asd1234124215421asd124
+      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
-      - '94'
+      - '96'
       Content-Type:
       - application/json
       User-Agent:
@@ -21,7 +21,7 @@ interactions:
     uri: https://api.github.com/graphql
   response:
     body:
-      string: '{"message":"Bad credentials","documentation_url":"https://docs.github.com/graphql"}'
+      string: '{"message":"Body should be a JSON object","documentation_url":"https://docs.github.com/graphql"}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -31,13 +31,13 @@ interactions:
         X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
         Sunset
       Content-Length:
-      - '83'
+      - '96'
       Content-Security-Policy:
       - default-src 'none'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 27 Sep 2021 21:31:56 GMT
+      - Mon, 27 Sep 2021 21:31:57 GMT
       Referrer-Policy:
       - origin-when-cross-origin, strict-origin-when-cross-origin
       Server:
@@ -46,6 +46,8 @@ interactions:
       - max-age=31536000; includeSubdomains; preload
       Vary:
       - Accept-Encoding, Accept, X-Requested-With
+      X-Accepted-OAuth-Scopes:
+      - repo
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -53,20 +55,26 @@ interactions:
       X-GitHub-Media-Type:
       - github.v4; format=json
       X-GitHub-Request-Id:
-      - 0EE3:12DCF:458F68:4C56B6:6152384C
+      - 7DF0:3184:75088D7:77C1569:6152384C
+      X-OAuth-Scopes:
+      - admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key,
+        admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo,
+        user, workflow, write:discussion, write:packages
       X-RateLimit-Limit:
-      - '0'
+      - '5000'
       X-RateLimit-Remaining:
-      - '0'
+      - '4935'
       X-RateLimit-Reset:
-      - '1632781916'
+      - '1632779963'
       X-RateLimit-Resource:
       - graphql
       X-RateLimit-Used:
-      - '0'
+      - '65'
       X-XSS-Protection:
       - '0'
+      github-authentication-token-expiration:
+      - 2021-10-27 18:12:30 UTC
     status:
-      code: 401
-      message: Unauthorized
+      code: 400
+      message: Bad Request
 version: 1
