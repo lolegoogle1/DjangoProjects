@@ -1,10 +1,10 @@
 import requests
 import os
-# from dotenv import load_dotenv
+#from dotenv import load_dotenv
 # load_dotenv()
 
 URL = 'https://api.github.com/graphql'
-API_TOKEN = os.getenv('API_KEY')
+API_TOKEN = os.getenv('API_TOKEN')
 
 
 def get_repositories(login):
