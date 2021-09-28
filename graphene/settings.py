@@ -22,7 +22,7 @@ SECRET_KEY = 'django-insecure-gdc+j+qalckc9%h&mi+jp4b=cn74c3u**nsh7!&h7$0__htb2b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["githgraphqluser.herokuapp.com"]
 
 
 # Application definition
