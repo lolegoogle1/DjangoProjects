@@ -1,19 +1,26 @@
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 URL = 'https://api.github.com/graphql'
-API_TOKEN = "###########"
+API_TOKEN = os.getenv('API_KEY')
 
 
 def get_repositories(login):
     json = {'query': '{user(login: "%s"){name repositories(first: 100){edges{node{name}}}} }' % login}
     headers = {'Authorization': 'Bearer %s' % API_TOKEN}
-    try:
-        response = requests.post(url=URL, json=json, headers=headers)
-        return extract_data(response)
-    except TypeError:
-        return 'There is no such user', ""
-    except requests.exceptions.ConnectionError:
-        return "I'm sorry. The connection can't be established at the moment", ""
+    if login:
+        try:
+            response = requests.post(url=URL, json=json, headers=headers)
+            return extract_data(response)
+        except TypeError:
+            return 'There is no such user', ""
+        except requests.exceptions.ConnectionError:
+            return "I'm sorry. The connection can't be established at the moment", ""
+        except KeyError:
+            return "Sorry for inconvenience. Please contact with the host to solve the problem", ""
+    return "Hello!", ""
 
 
 def extract_data(response):
