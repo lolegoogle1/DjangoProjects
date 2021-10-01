@@ -8,7 +8,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer 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
+      - Bearer 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
       Connection:
       - keep-alive
       Content-Length:
@@ -40,7 +40,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 27 Sep 2021 21:31:56 GMT
+      - Fri, 01 Oct 2021 15:32:53 GMT
       Referrer-Policy:
       - origin-when-cross-origin, strict-origin-when-cross-origin
       Server:
@@ -60,25 +60,23 @@ interactions:
       X-GitHub-Media-Type:
       - github.v4; format=json
       X-GitHub-Request-Id:
-      - 6937:430E:2301762:23A833B:6152384C
+      - 3B95:12A54:5237C1:53FF56:61572A24
       X-OAuth-Scopes:
-      - admin:enterprise, admin:gpg_key, admin:org, admin:org_hook, admin:public_key,
-        admin:repo_hook, delete:packages, delete_repo, gist, notifications, repo,
-        user, workflow, write:discussion, write:packages
+      - public_repo, read:user, repo:status
       X-RateLimit-Limit:
       - '5000'
       X-RateLimit-Remaining:
-      - '4936'
+      - '4975'
       X-RateLimit-Reset:
-      - '1632779963'
+      - '1633105287'
       X-RateLimit-Resource:
       - graphql
       X-RateLimit-Used:
-      - '64'
+      - '25'
       X-XSS-Protection:
       - '0'
       github-authentication-token-expiration:
-      - 2021-10-27 18:12:30 UTC
+      - 2021-10-28 12:09:41 UTC
     status:
       code: 200
       message: OK

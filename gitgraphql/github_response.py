@@ -15,19 +15,21 @@ def get_repositories(login):
             response = requests.post(url=URL, json=json, headers=headers)
             return extract_data(response)
         except TypeError:
-            return 'There is no such user', ""
+            return "NOUSER", ""
+            # return 'There is no such user: ', ""
         except requests.exceptions.ConnectionError:
-            return "I'm sorry. The connection can't be established at the moment", ""
+            return "Connection", ""
+            # return "I'm sorry. The connection can't be established at the moment", ""
         except KeyError:
-            return "Sorry for inconvenience. Please contact with the host to solve the problem", ""
+            return "Credentirals", ""
+            # return "Sorry for inconvenience. Please contact with the host to solve the problem", ""
     return "Hello!", ""
 
 
 def extract_data(response):
     data = response.json()['data']['user']
-    name = data['name'] or "Noname\n"
-    name = name+"\n"
+    name = data['name'] or "Noname"
     repo_list = []
     for val in data["repositories"]["edges"]:
-        repo_list.append("\t-" + val["node"]["name"] + "\n")
+        repo_list.append("-" + val["node"]["name"])
     return name, repo_list

@@ -6,17 +6,18 @@
 
 <div>
     <hr color="black">
-    <form action="" method="post" style="margin-top: 5px;display: flex;">
+    <form action="" method="post" style="margin-top: 5px;display: flex;justify-content: center;">
         {% csrf_token %}
-        <h3 style="color: #961451;font-size: 15px;">{{form}}</h3>
+        <h2 style="color: #000;font-size: 20px;">{{form}}</h2>
         <input class="button" type="submit" value="Get repositories">
     </form>
 </div>
-<div class="response">
+<!--<div class="response">
         <h2 style="color: #fff;">{{name}}</h2>
         {% for item in response%}
                 <h4 style="color: #ffa;"><ol><b><i>{{item}}</i></b></ol></h4>
 
         {% endfor %}
 </div>
+-->
 {% endblock content %}

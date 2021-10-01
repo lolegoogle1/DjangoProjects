@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import TextInput, Textarea
 
 
 class Customer(models.Model):

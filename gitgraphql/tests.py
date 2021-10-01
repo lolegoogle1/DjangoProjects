@@ -105,42 +105,42 @@ def github_api(error_type):
 # ============== Test Data for Users ==================
 
 test_data = {
-    "crankerkor": ('Oleksandr Lutsenko\n',
-                   ['\t-nodejs-examples\n', '\t-crankerkor.github.io\n',
-                    '\t-lil-trip\n', '\t-PowershapeLab1\n',
-                    '\t-discrete-model-labs\n', '\t-da\n'
+    "crankerkor": ('Oleksandr Lutsenko',
+                   ['-nodejs-examples', '-crankerkor.github.io',
+                    '-lil-trip', '-PowershapeLab1',
+                    '-discrete-model-labs', '-da'
                     ]
                    ),
 
-    "lolegoogle1": ('Oleh Hryshcuk\n',
-                    ['\t-lolegoogle1\n', '\t-DjangoProjects\n']),
+    "lolegoogle1": ('Oleh Hryshcuk',
+                    ['-lolegoogle1', '-DjangoProjects']),
 
-    "LunaLovegoood": ('Loony\n',
-                      ['\t-matrix\n', '\t-random-walker\n',
-                       '\t-langtons-ant\n', '\t-barnsley-fern\n',
-                       '\t-PI-monte-carlo\n', '\t-n-puzzle\n',
-                       '\t-PowershapeLab1\n', '\t-simple-game-engine\n',
-                       '\t-traffic-flow\n', '\t-matrix-digital-rain\n',
-                       '\t-parallel-computing\n', '\t-ahk-scripts\n',
-                       '\t-discrete-models-labs\n'
+    "LunaLovegoood": ('Loony',
+                      ['-matrix', '-random-walker',
+                       '-langtons-ant', '-barnsley-fern',
+                       '-PI-monte-carlo', '-n-puzzle',
+                       '-PowershapeLab1', '-simple-game-engine',
+                       '-traffic-flow', '-matrix-digital-rain',
+                       '-parallel-computing', '-ahk-scripts',
+                       '-discrete-models-labs'
                        ]
                       ),
 
-    "Yurii-Khomiak": ('Yurii Khomiak\n',
-                      ['\t-dotfiles\n', '\t-yt-audio-playlist-downloader\n',
-                       '\t-nvim-config\n'
+    "Yurii-Khomiak": ('Yurii Khomiak',
+                      ['-dotfiles', '-yt-audio-playlist-downloader',
+                       '-nvim-config'
                        ]
                       ),
 
-    "dhmfu": ('Vasil Dudka\n',
-              ['\t-umka-carboncalc\n', '\t-checklist-app\n',
-               '\t-checklist-app-server\n'
+    "dhmfu": ('Vasil Dudka',
+              ['-umka-carboncalc', '-checklist-app',
+               '-checklist-app-server'
                ]
               ),
 
-    "aasdasdas": ('Noname\n\n', []),
+    "aasdasdas": ('Noname', []),
 
-    "1232": ('Noname\n\n', ['\t-amine\n']),
+    "1232": ('Noname', ['-amine']),
 
     "0.1231": ('There is no such user',
                ''
